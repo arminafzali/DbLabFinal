@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace DbLabFinal.Domain
 {
-    public class Order : BaseEntity
+    public class WarehouseProduct : BaseEntity
     {
-        public int UserId { get; set; }
-        public User User { get; set; }
-        public int DeliveryId { get; set; }
-        public Delivery Delivery { get; set; }
         public int WarehouseId { get; set; }
         public Warehouse Warehouse { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
+        public int ProductAmount { get; set; }
     }
 }

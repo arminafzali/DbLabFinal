@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DbLabFinal.Domain
 {
-    public class OrderItem : BaseEntity
+    public class Delivery
     {
     }
 }
