@@ -7,6 +7,6 @@ namespace DbLabFinal.Domain
 {
     public class Warehouse : BaseEntity
     {
-        public String WarehouseDesc { get; set; }
+        public string Description { get; set; }
     }
 }

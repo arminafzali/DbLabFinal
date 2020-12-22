@@ -7,8 +7,8 @@ namespace DbLabFinal.Domain
 {
     public class Product : BaseEntity
     {
-        public String ProductName { get; set; }
-        public String ProductDesc { get; set; }
-        public decimal ProductPrice { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
     }
 }
