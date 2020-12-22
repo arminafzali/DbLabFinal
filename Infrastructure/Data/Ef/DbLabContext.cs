@@ -13,10 +13,13 @@ namespace DbLabFinal.Infrastructure.Data.Ef
         {
         }
 
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<Delivery> Deliveries { get; set; }
-
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Warehouse> Warehouses { get; set; }
+        public DbSet<WarehouseProduct> WarehouseProducts { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DbLabContext).Assembly);

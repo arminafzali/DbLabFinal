@@ -8,5 +8,6 @@ namespace DbLabFinal.Domain
     public class Warehouse : BaseEntity
     {
         public string Description { get; set; }
+        public IList<WarehouseProduct> WarehouseProducts { get; set; }
     }
 }

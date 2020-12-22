@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace DbLabFinal.Domain
 {
-    public class Delivery : BaseEntity
+    public class Delivery : User
     {
-        public string Name { get; set; }
+        public IList<Order> Order { get; set; }
+        public double Credit { get; set; }
     }
 }

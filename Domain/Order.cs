@@ -7,11 +7,17 @@ namespace DbLabFinal.Domain
 {
     public class Order : BaseEntity
     {
-        public int UserId { get; set; }
         public User User { get; set; }
-        public int DeliveryId { get; set; }
         public Delivery Delivery { get; set; }
-        public int WarehouseId { get; set; }
         public Warehouse Warehouse { get; set; }
+        public IList<OrderItem> Items { get; set; }
+        public Status Status { get; set; }
+        public double TotalPrice { get; set; }
+    }
+    public enum Status
+    {
+        Pending = 0,
+        Done = 1,
+        Reject = -1
     }
 }
